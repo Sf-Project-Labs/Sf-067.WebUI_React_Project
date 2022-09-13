@@ -7,11 +7,12 @@ const useStyles = {
     background: '#fafafa',
     position: 'absolute',
     left: '50%',
-    top: '20px',
-    transform: 'translateX(-50%)',
+    top: '50%',
+    transform: 'translate(-50%, -50%)',
   },
   title_container: {
-    margin: '50px auto 80px',
+    position: 'relative',
+    margin: '100px auto 80px',
     padding: 0,
   },
   news_container: {
