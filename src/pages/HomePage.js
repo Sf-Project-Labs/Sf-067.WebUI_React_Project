@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import BreakdownSection from '../components/BreakdownSection/BreakdownSection';
+import { BreakdownSection } from '../components/BreakdownSection';
 
 function HomePage() {
   return (
