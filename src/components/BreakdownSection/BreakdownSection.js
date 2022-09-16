@@ -1,39 +1,28 @@
-import BreakdownMainNews from './BreakdownMainNews';
-import BreakdownSideNews from './BreakdownSideNews';
-import { Container, Grid } from '@mui/material';
+import { Grid } from '@mui/material';
+import { Fragment } from 'react';
+import { Section } from '../UI/Section';
+import { CardMainNews } from './CardMainNews';
+import { breakdownNews } from './mockData';
+import { CardFlex } from '../UI/CardFlex';
 
-import SectionTitle from '../UI/SectionTitle';
-
-function BreakdownSection(props) {
+function BreakdownSection() {
   return (
-    <Container maxWidth='md'>
-      <SectionTitle title='Breakdown' />
-      <Grid container spacing={4} justifyContent='center' alignItems='center' wrap='nowrap'>
-        <Grid container item spacing={4}>
-          {props.main.map(news => (
-            <Grid item key={news.id}>
-              <BreakdownMainNews data={news} key={news.id} />
+    <Section title='Breakdown'>
+      <Grid container spacing={4} sx={{ alignItems: 'stretch' }}>
+        {breakdownNews.map(news => (
+          <Fragment key={news.main.id}>
+            <Grid item xs={6}>
+              <CardMainNews {...news.main} />
             </Grid>
-          ))}
-        </Grid>
-        <Grid container item spacing={4}>
-          <Grid container item justifyContent='center' alignItems='center'>
-            {props.side.map(news => (
-              <Grid item key={news.id}>
-                <BreakdownSideNews data={news} key={news.id} />
-              </Grid>
-            ))}
-          </Grid>
-          <Grid container item justifyContent='center' alignItems='center'>
-            {props.side.map(news => (
-              <Grid item key={news.id}>
-                <BreakdownSideNews data={news} key={news.id} />
-              </Grid>
-            ))}
-          </Grid>
-        </Grid>
+            <Grid item xs={6}>
+              {news.additional.map(news => (
+                <CardFlex {...news} />
+              ))}
+            </Grid>
+          </Fragment>
+        ))}
       </Grid>
-    </Container>
+    </Section>
   );
 }
 
