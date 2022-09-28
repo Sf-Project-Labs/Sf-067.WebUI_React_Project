@@ -8,13 +8,13 @@ import { CardFlex } from '../UI/CardFlex';
 export const BreakdownSection = () => {
   return (
     <Section title='Breakdown'>
-      <Grid container spacing={4} alignItems='stretch'>
+      <Grid container spacing={4}>
         {breakdownNews.map(news => (
           <Fragment key={news.main.id}>
             <Grid item xs={6}>
               <CardMainNews {...news.main} />
             </Grid>
-            <Grid container item xs={6}>
+            <Grid container item xs={6} flexDirection='column' justifyContent='space-between'>
               {news.additional.map(news => (
                 <CardFlex {...news} />
               ))}
