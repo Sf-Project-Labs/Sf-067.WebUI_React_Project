@@ -18,7 +18,7 @@ export const CardMainNews = ({ category, image, title, sx = {} }) => {
           titleTypographyProps={{ variant: 'subtitle1' }}
         />
         <CardMedia component='img' height={200} image={image} alt={title} />
-        <CardContent sx={{ height: '113px' }}>
+        <CardContent>
           <Typography gutterBottom variant='h5' component='div'>
             {title}
           </Typography>
