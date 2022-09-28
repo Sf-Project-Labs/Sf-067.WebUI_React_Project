@@ -5,7 +5,7 @@ export const CardFlex = ({ image, title, subTitle }) => {
     <Card>
       <CardActionArea sx={{ display: 'flex' }}>
         <CardMedia
-          height={103}
+          height={100}
           width={150}
           component='img'
           image={image}
