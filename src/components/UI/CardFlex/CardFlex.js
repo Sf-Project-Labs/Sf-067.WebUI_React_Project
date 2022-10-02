@@ -1,8 +1,21 @@
-import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
+import { Button, Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
+import { useState } from 'react';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
-export const CardFlex = ({ image, title, subTitle }) => {
+import { styles } from '../../BreakdownSection/styles';
+
+export const CardFlex = ({ image, title, subTitle, sx = {} }) => {
+  const [style, setStyle] = useState({ display: 'none' });
   return (
-    <Card>
+    <Card
+      sx={sx}
+      onMouseEnter={e => {
+        setStyle({ display: 'block' });
+      }}
+      onMouseLeave={e => {
+        setStyle({ display: 'none' });
+      }}
+    >
       <CardActionArea sx={{ display: 'flex' }}>
         <CardMedia
           height={100}
@@ -17,6 +30,9 @@ export const CardFlex = ({ image, title, subTitle }) => {
           <Typography variant='body2' color='text.secondary'>
             {subTitle}
           </Typography>
+          <Button size='small' sx={{ ...style, ...styles.arrowButton }}>
+            <AiOutlineArrowRight />
+          </Button>
         </CardContent>
       </CardActionArea>
     </Card>
