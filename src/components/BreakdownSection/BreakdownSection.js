@@ -12,11 +12,11 @@ export const BreakdownSection = () => {
         {breakdownNews.map(news => (
           <Fragment key={news.main.id}>
             <Grid item xs={6}>
-              <CardMainNews {...news.main} />
+              <CardMainNews {...news.main} sx={{ position: 'relative' }} />
             </Grid>
             <Grid container item xs={6} flexDirection='column' justifyContent='space-between'>
               {news.additional.map(news => (
-                <CardFlex {...news} />
+                <CardFlex {...news} sx={{ position: 'relative' }} />
               ))}
             </Grid>
           </Fragment>
