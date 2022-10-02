@@ -1,0 +1,99 @@
+
+:root {
+    --borderColor: #B2B2B2;
+    --textColor: #fff;
+    --font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --triangleColor: #D72130;
+}
+
+.divider {
+    color: var(--borderColor);
+    margin-bottom: 30px;
+}
+.dividerText {
+    width: 177.56px;
+    height: 42px;
+    border: 1px solid var(--borderColor);
+    border-radius: 21px;
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 42px;
+    color: black;
+    text-transform: uppercase;
+}
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.photoContainter { 
+    background-image: url('./pic.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    max-width: 813px;
+    height: 577px;
+    position: relative;
+}
+
+.triangle {
+    width: 169px;
+    height: 123px;
+    clip-path: polygon(0 0, 0% 100%, 100% 49%);
+    background-color: var(--triangleColor);
+    color: var(--textColor);
+    text-align: left;
+    line-height: 22px;
+    font-size: 16px;
+    position: absolute;
+    top: -3%;
+    left: -2.5%;
+}
+.triangleTextHolder {
+    width: 62px;
+    height: 66px;
+    line-height: 22px;
+    position: absolute;
+    left: 7.5%;
+    transform: translateY(50%);
+    font-weight: 700;
+    color:  var(--textColor);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.triangleText {
+    font-weight: 100;
+}
+.description {
+    position: absolute;
+    max-width: 70%;
+    bottom: 2.5%;
+    left: 2.5%;
+    color: var(--textColor);
+}
+.description__title {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 700;
+    /* font-family: Open Sans; */
+}
+.description__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    width: 535px;
+    text-align: left;
+}
+.description__textAuthor {
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+
+/*  dla mobile
+.photoContainer {
+    height: 277px
+}
+*/
