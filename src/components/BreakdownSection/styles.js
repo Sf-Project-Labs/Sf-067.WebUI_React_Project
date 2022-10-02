@@ -7,4 +7,14 @@ export const styles = {
     textAlign: 'center',
     background: '#2F2F2F',
   },
+  arrowButton: {
+    position: 'absolute',
+    bottom: '0px',
+    right: '0px',
+    padding: '0px 5px',
+    minWidth: 0,
+    '&:hover': {
+      backgroundColor: 'transparent',
+    },
+  },
 };
