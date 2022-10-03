@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Wrapper from './components/UI/Wrapper';
+import VerticalMenu from './components/VerticalMenu/VerticalMenu';
+import VerticalMenu2 from './components/VerticalMenu2/VerticalMenu2';
+import VerticalMenu3 from './components/VerticalMenu3/VerticalMenu3';
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Learn React
-        </a>
-      </header>
+    <div ClassName='App'>
+      <Wrapper>
+        <VerticalMenu />
+        <VerticalMenu2 />
+        <VerticalMenu3 />
+      </Wrapper>
     </div>
   );
 }
-
 export default App;

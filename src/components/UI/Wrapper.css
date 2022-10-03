@@ -1,0 +1,8 @@
+.wrapper {
+  width: 100%;
+  background-color: #d72130;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
