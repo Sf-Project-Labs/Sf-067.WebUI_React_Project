@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './POTD.module.css';
 import { Divider, Container, Box, Typography } from '@mui/material';
-import Picture from './pic.jpg';
+// import Picture from './pic.jpg';
 
 function PhotoOfTheDay() {
   return (
