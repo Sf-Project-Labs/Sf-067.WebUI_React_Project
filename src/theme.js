@@ -31,13 +31,13 @@ const theme = createTheme({
         root: {
           backgroundColor: 'transparent',
           borderRadius: 0,
-          padding: 13,
           boxShadow: 'none',
-          // border: '1px solid #EDEDED',
+          // padding: 13,
+          border: '1px solid #EDEDED',
           '&:hover': {
             cursor: 'pointer',
             backgroundColor: '#fff',
-            boxShadow: '0px 2px 24px rgba(0, 0, 0, 0.110932)',
+            boxShadow: '0px 7px 15px 2px #D2D2D2',
           },
         },
       },
