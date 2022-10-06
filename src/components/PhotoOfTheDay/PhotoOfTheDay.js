@@ -11,7 +11,7 @@ function PhotoOfTheDay() {
           <div className={styles.dividerText}>Photo of the day</div>
         </Divider>
 
-        <Container className={styles.photoContainter}>
+        <Container sx={{ marginTop: '30px' }} className={styles.photoContainter}>
           <Box component='div' className={styles.triangle}>
             <div className={styles.triangleTextHolder}>
               Photo <br />

@@ -76,7 +76,6 @@
     text-align: left;
     margin-bottom: 10px;
     font-weight: 700;
-    /* font-family: Open Sans; */
 }
 .description__text {
     font-weight: 400;
@@ -90,3 +89,8 @@
     font-style: italic;
 }
 
+@media (min-width: 1200px) {
+.photoContainter {
+    max-width: 813px;
+}
+}
