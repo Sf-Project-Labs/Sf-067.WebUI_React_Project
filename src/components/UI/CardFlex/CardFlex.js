@@ -1,10 +1,17 @@
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
 import EastIcon from '@mui/icons-material/East';
 
-import { styles } from './styles';
+import { styles } from '../../BreakdownSection/styles';
 import { useState } from 'react';
 
-export const CardFlex = ({ image, title, subTitle, shouldHover, showArrow, sx = {} }) => {
+export const CardFlex = ({
+  image,
+  title,
+  subTitle,
+  shouldHover = false,
+  showArrow = false,
+  sx = {},
+}) => {
   let hoverStyle = {};
   if (shouldHover) {
     hoverStyle = {
