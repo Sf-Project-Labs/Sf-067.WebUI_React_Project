@@ -25,9 +25,6 @@ const theme = createTheme({
           borderRadius: 0,
           boxShadow: 'none',
           border: '1px solid #EDEDED',
-          '&:hover': {
-            backgroundColor: '#fafafa',
-          },
         },
       },
     },
