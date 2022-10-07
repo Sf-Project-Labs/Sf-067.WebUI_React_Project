@@ -1,19 +1,31 @@
-import { Button, Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
-import { useState } from 'react';
-import { AiOutlineArrowRight } from 'react-icons/ai';
+import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
+import EastIcon from '@mui/icons-material/East';
 
 import { styles } from '../../BreakdownSection/styles';
+import { useState } from 'react';
 
-export const CardFlex = ({ image, title, subTitle, sx = {} }) => {
-  const [style, setStyle] = useState({ display: 'none' });
+export const CardFlex = ({ image, title, subTitle, shouldHover, showArrow, sx = {} }) => {
+  let hoverStyle = {};
+  if (shouldHover) {
+    hoverStyle = {
+      '&:hover': {
+        cursor: 'pointer',
+        backgroundColor: '#fff',
+        boxShadow: '0px 7px 15px 2px #D2D2D2',
+      },
+    };
+  }
+
+  const [arrowIsDisplayed, setArrowIsDisplayed] = useState({ display: 'none' });
+
   return (
     <Card
-      sx={sx}
+      sx={{ ...sx, ...hoverStyle }}
       onMouseEnter={e => {
-        setStyle({ display: 'block' });
+        setArrowIsDisplayed({ display: 'block' });
       }}
       onMouseLeave={e => {
-        setStyle({ display: 'none' });
+        setArrowIsDisplayed({ display: 'none' });
       }}
     >
       <CardActionArea sx={{ display: 'flex' }}>
@@ -30,9 +42,13 @@ export const CardFlex = ({ image, title, subTitle, sx = {} }) => {
           <Typography variant='body2' color='text.secondary'>
             {subTitle}
           </Typography>
-          <Button size='small' sx={{ ...style, ...styles.arrowButton }}>
-            <AiOutlineArrowRight />
-          </Button>
+          {showArrow && (
+            <EastIcon
+              fontSize='large'
+              color='primary'
+              sx={{ ...styles.arrowButton, ...arrowIsDisplayed }}
+            />
+          )}
         </CardContent>
       </CardActionArea>
     </Card>

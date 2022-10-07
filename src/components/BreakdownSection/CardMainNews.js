@@ -1,5 +1,4 @@
 import {
-  Button,
   Card,
   CardActionArea,
   CardContent,
@@ -7,21 +6,29 @@ import {
   CardMedia,
   Typography,
 } from '@mui/material';
+import EastIcon from '@mui/icons-material/East';
+
 import { useState } from 'react';
 import { styles } from './styles';
 
-import { AiOutlineArrowRight } from 'react-icons/ai';
-
 export const CardMainNews = ({ category, image, title, sx = {} }) => {
-  const [style, setStyle] = useState({ display: 'none' });
+  let hoverStyle = {
+    '&:hover': {
+      cursor: 'pointer',
+      backgroundColor: '#fff',
+      boxShadow: '0px 7px 15px 2px #D2D2D2',
+    },
+  };
+
+  const [arrowIsDisplayed, setArrowIsDisplayed] = useState({ display: 'none' });
   return (
     <Card
-      sx={sx}
+      sx={{ ...sx, ...hoverStyle }}
       onMouseEnter={e => {
-        setStyle({ display: 'block' });
+        setArrowIsDisplayed({ display: 'block' });
       }}
       onMouseLeave={e => {
-        setStyle({ display: 'none' });
+        setArrowIsDisplayed({ display: 'none' });
       }}
     >
       <CardActionArea>
@@ -35,9 +42,11 @@ export const CardMainNews = ({ category, image, title, sx = {} }) => {
           <Typography gutterBottom variant='h5' component='div'>
             {title}
           </Typography>
-          <Button size='small' sx={{ ...style, ...styles.arrowButton }}>
-            <AiOutlineArrowRight />
-          </Button>
+          <EastIcon
+            fontSize='large'
+            color='primary'
+            sx={{ ...styles.arrowButton, ...arrowIsDisplayed }}
+          />
         </CardContent>
       </CardActionArea>
     </Card>
