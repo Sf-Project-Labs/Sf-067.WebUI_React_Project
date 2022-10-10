@@ -16,7 +16,7 @@ export const BreakdownSection = () => {
             </Grid>
             <Grid container item xs={6} flexDirection='column' justifyContent='space-between'>
               {news.additional.map(news => (
-                <CardFlex key={news.id} {...news} shouldHover={true} showArrow={true} />
+                <CardFlex key={news.id} {...news} boxShadow={true} showArrow={true} />
               ))}
             </Grid>
           </Fragment>

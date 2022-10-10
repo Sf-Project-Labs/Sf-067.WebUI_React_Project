@@ -4,30 +4,27 @@ import EastIcon from '@mui/icons-material/East';
 import { styles } from '../../BreakdownSection/styles';
 import { useState } from 'react';
 
+let hoverStyle = {
+  '&:hover': {
+    cursor: 'pointer',
+    backgroundColor: '#fff',
+    boxShadow: '0px 7px 15px 2px #D2D2D2',
+  },
+};
+
 export const CardFlex = ({
   image,
   title,
   subTitle,
-  shouldHover = false,
+  boxShadow = false,
   showArrow = false,
   sx = {},
 }) => {
-  let hoverStyle = {};
-  if (shouldHover) {
-    hoverStyle = {
-      '&:hover': {
-        cursor: 'pointer',
-        backgroundColor: '#fff',
-        boxShadow: '0px 7px 15px 2px #D2D2D2',
-      },
-    };
-  }
-
   const [arrowIsDisplayed, setArrowIsDisplayed] = useState({ display: 'none' });
 
   return (
     <Card
-      sx={{ ...sx, ...hoverStyle }}
+      sx={boxShadow ? { ...sx, ...hoverStyle } : sx}
       onMouseEnter={e => {
         setArrowIsDisplayed({ display: 'block' });
       }}
