@@ -66,8 +66,8 @@ import {
                   <Button
                     variant="contained"
                     sx={{
-                      paddingTop: "8.25px",
-                      paddingBottom: "7.25px",
+                      paddingTop: "9.5px",
+                      paddingBottom: "9.5px",
                       paddingLeft: "20px",
                       paddingRight: "20px",
                       boxShadow: 0,
