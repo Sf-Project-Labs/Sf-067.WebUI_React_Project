@@ -9,12 +9,37 @@ const theme = createTheme({
       main: '#D72130',
     },
   },
+  shape: {
+    borderRadius: 0,
+  },
   typography: {
     fontFamily: 'Open Sans',
     fontWeightLight: 400,
     fontWeightRegular: 500,
     fontWeightMedium: 600,
     fontWeightBold: 700,
+    h1: {
+      fontSize: 22,
+      fontWeight: 600,
+    },
+    h2: {
+      fontSize: 16,
+      fontWeight: 700,
+    },
+    h3: {
+      fontSize: 12,
+      fontWeight: 400,
+      color: "#7F7B7B",
+    },
+    h4: {
+      fontSize: 12,
+      fontWeight: 600,
+    },
+    button: {
+      fontSize: 12,
+      fontWeight: 600,
+      textTransform: "none",
+    },
   },
   components: {
     MuiCard: {
