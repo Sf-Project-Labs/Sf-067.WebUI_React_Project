@@ -32,7 +32,6 @@ const theme = createTheme({
           backgroundColor: 'transparent',
           borderRadius: 0,
           boxShadow: 'none',
-          // padding: 13,
           border: '1px solid #EDEDED',
           '&:hover': {
             cursor: 'pointer',

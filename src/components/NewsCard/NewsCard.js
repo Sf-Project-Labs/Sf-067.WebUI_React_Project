@@ -7,13 +7,13 @@ import EastIcon from '@mui/icons-material/East';
 import { useState } from 'react';
 import { styles } from '../styles';
 
-const NewsCard = ({ article }) => {
+export const NewsCard = ({ article }) => {
   const [isDisplayed, setIsDisplayed] = useState(false);
 
   return (
     <Grid item xs={3}>
       <Card
-        sx={{ minWidth: 205, height: 294 }}
+        sx={{ ...styles.mainArticleCard }}
         onMouseOver={e => {
           setIsDisplayed(true);
         }}
@@ -39,5 +39,3 @@ const NewsCard = ({ article }) => {
     </Grid>
   );
 };
-
-export default NewsCard;

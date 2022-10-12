@@ -1,9 +1,9 @@
 import { Grid } from '@mui/material';
-import { mainImages } from '../Data/MainImagesData.js';
+import { mainImages } from './MainImagesData.js';
 import Box from '@mui/material/Box';
 import { styles } from '../styles';
 
-const MainImage = () => {
+export const MainImage = () => {
   return (
     <Grid>
       {mainImages.map(mainImage => (
@@ -15,5 +15,3 @@ const MainImage = () => {
     </Grid>
   );
 };
-
-export default MainImage;

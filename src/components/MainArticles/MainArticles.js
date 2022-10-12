@@ -1,15 +1,20 @@
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
-import NewsCard from '../Card/NewsCard';
-import MainImage from '../MainImage/MainImage';
-import { articles } from '../Data/MainArticlesData.js';
+import { articles } from './MainArticlesData.js';
+import { NewsCard } from '../NewsCard';
+import { MainImage } from '../MainImage';
 
-const MainArticles = () => {
+export const MainArticles = () => {
   return (
-    <Container maxWidth={false} disableGutters={true}>
+    <Container>
       <MainImage />
 
-      <Grid container marginY={1.8} spacing={1}>
+      <Grid
+        container
+        marginY={1.8}
+        spacing={3}
+        sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}
+      >
         {articles.map(article => (
           <NewsCard key={article.id} article={article} />
         ))}
@@ -17,5 +22,3 @@ const MainArticles = () => {
     </Container>
   );
 };
-
-export default MainArticles;

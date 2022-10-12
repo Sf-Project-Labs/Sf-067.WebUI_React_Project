@@ -21,4 +21,9 @@ export const styles = {
       backgroundColor: 'transparent',
     },
   },
+  mainArticleCard: {
+    minWidth: 202,
+    height: 294,
+    border: '12px solid transparent',
+  },
 };
