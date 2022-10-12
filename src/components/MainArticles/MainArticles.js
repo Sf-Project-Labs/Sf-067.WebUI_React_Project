@@ -6,15 +6,13 @@ import { MainImage } from '../MainImage';
 
 export const MainArticles = () => {
   return (
-    <Container>
+    <Container
+      disableGutters={true}
+      sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}
+    >
       <MainImage />
 
-      <Grid
-        container
-        marginY={1.8}
-        spacing={3}
-        sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}
-      >
+      <Grid container marginY={1.8}>
         {articles.map(article => (
           <NewsCard key={article.id} article={article} />
         ))}
