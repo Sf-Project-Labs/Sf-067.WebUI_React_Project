@@ -11,19 +11,19 @@ import EastIcon from '@mui/icons-material/East';
 import { useState } from 'react';
 import { styles } from './styles';
 
-export const CardMainNews = ({ category, image, title, sx = {} }) => {
-  let hoverStyle = {
-    '&:hover': {
-      cursor: 'pointer',
-      backgroundColor: '#fff',
-      boxShadow: '0px 7px 15px 2px #D2D2D2',
-    },
-  };
+const hoverStyle = {
+  '&:hover': {
+    cursor: 'pointer',
+    backgroundColor: '#fff',
+    boxShadow: '0px 7px 15px 2px #D2D2D2',
+  },
+};
 
+export const CardMainNews = ({ category, image, title, sx = {} }) => {
   const [arrowIsDisplayed, setArrowIsDisplayed] = useState({ display: 'none' });
   return (
     <Card
-      sx={{ ...sx, ...hoverStyle }}
+      sx={{ ...hoverStyle, ...sx }}
       onMouseEnter={e => {
         setArrowIsDisplayed({ display: 'block' });
       }}

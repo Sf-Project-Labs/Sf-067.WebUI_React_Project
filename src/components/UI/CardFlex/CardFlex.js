@@ -4,7 +4,7 @@ import EastIcon from '@mui/icons-material/East';
 import { styles } from '../../BreakdownSection/styles';
 import { useState } from 'react';
 
-let hoverStyle = {
+const hoverStyle = {
   '&:hover': {
     cursor: 'pointer',
     backgroundColor: '#fff',
@@ -24,7 +24,7 @@ export const CardFlex = ({
 
   return (
     <Card
-      sx={boxShadow ? { ...sx, ...hoverStyle } : sx}
+      sx={boxShadow ? { ...hoverStyle, ...sx } : sx}
       onMouseEnter={e => {
         setArrowIsDisplayed({ display: 'block' });
       }}
