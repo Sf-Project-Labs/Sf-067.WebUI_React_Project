@@ -29,7 +29,7 @@ const theme = createTheme({
     h3: {
       fontSize: 12,
       fontWeight: 400,
-      color: "#7F7B7B",
+      color: '#7F7B7B',
     },
     h4: {
       fontSize: 12,
@@ -38,7 +38,7 @@ const theme = createTheme({
     button: {
       fontSize: 12,
       fontWeight: 600,
-      textTransform: "none",
+      textTransform: 'none',
     },
   },
   components: {
