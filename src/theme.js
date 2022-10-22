@@ -1,4 +1,5 @@
 import { createTheme } from '@mui/material/styles';
+import { cardActionAreaClasses } from '@mui/material';
 
 const theme = createTheme({
   palette: {
@@ -20,14 +21,18 @@ const theme = createTheme({
     MuiCard: {
       styleOverrides: {
         root: {
-          backgroundColor: 'transparent',
+          backgroundColor: '#fafafa',
           borderRadius: 0,
           boxShadow: 'none',
           border: '1px solid #EDEDED',
-          '&:hover': {
-            cursor: 'pointer',
-            backgroundColor: '#fff',
-            boxShadow: '0px 7px 15px 2px #D2D2D2',
+        },
+      },
+    },
+    MuiCardActionArea: {
+      styleOverrides: {
+        root: {
+          [`&:hover .${cardActionAreaClasses.focusHighlight}`]: {
+            opacity: 0,
           },
         },
       },
