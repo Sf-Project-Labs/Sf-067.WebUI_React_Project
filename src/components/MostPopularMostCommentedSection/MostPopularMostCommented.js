@@ -3,7 +3,7 @@ import { Section } from '../UI/Section';
 import { mostArticles } from './mockData';
 import { CardFlex } from '../UI/CardFlex';
 
-export const MostPopularMostCommentedSection = () => {
+export const MostPopularMostCommented = () => {
   return (
     <Grid container spacing={4}>
       {mostArticles.map(articles => (
