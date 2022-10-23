@@ -31,7 +31,7 @@ export const CardMainNews = ({ category, image, title, sx = {} }) => {
         setArrowIsDisplayed({ display: 'none' });
       }}
     >
-      <CardActionArea>
+      <CardActionArea disableRipple>
         <CardHeader
           title={category}
           sx={styles.cardHeader}
