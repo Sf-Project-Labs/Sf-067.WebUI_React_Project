@@ -26,7 +26,7 @@ export const NewsCard = ({ article }) => {
           <Typography variant='h2' component='h2' sx={{ marginTop: 1 }}>
             {article.title}
           </Typography>
-          <Typography variant='body1' component='h2' style={{ color: '#7F7B7B' }}>
+          <Typography variant='body1' component='h2' sx={{ color: '#7F7B7B' }}>
             {article.subTitle}
           </Typography>
           {isDisplayed && (
