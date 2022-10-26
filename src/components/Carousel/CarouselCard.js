@@ -39,28 +39,21 @@ export const CarouselCard = () => {
       fullHeightHover={false}
       navButtonsAlwaysVisible={true}
       IndicatorIcon={indicatorArr}
-      navButtonsProps={{
-        style: {
-          marginLeft: 200,
-          backgroundColor: 'transparent',
-          borderRadius: '50%',
-          border: '1px solid',
-          borderColor: '#979797',
-          color: '#979797',
-          '&:hover': {
-            color: '#C63638',
-          },
-        },
+      NavButton={({ onClick, className, style, next, prev }) => {
+        return (
+          <Button onClick={onClick} className={className} style={styles.navButtons} disableRipple>
+            {next && <ArrowForwardIosRoundedIcon />}
+            {prev && <ArrowBackIosRoundedIcon />}
+          </Button>
+        );
       }}
       navButtonsWrapperProps={{
-        // Move the buttons to the bottom. Unsetting top here to override default style.
         style: {
           bottom: '0',
           top: 'unset',
+          marginLeft: '196px',
         },
       }}
-      NextIcon={<ArrowForwardIosRoundedIcon />}
-      PrevIcon={<ArrowBackIosRoundedIcon />}
       indicatorIconButtonProps={{
         style: {
           paddingLeft: '10px',
@@ -73,7 +66,7 @@ export const CarouselCard = () => {
       }}
       activeIndicatorIconButtonProps={{
         style: {
-          // backgroundColor: 'transparent',
+          backgroundColor: 'transparent',
           color: '#C63638',
           fontSize: '14px',
           fontWeight: 700,
@@ -121,5 +114,3 @@ function Item(props) {
     </Paper>
   );
 }
-
-/// find how to disable click effect

@@ -10,9 +10,9 @@ export const MainArticles = () => {
   return (
     <Container
       disableGutters={true}
-      sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}
+      sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', position: 'relative' }}
     >
-      <Box sx={{ position: 'absolute', right: 620, top: 136 }}>
+      <Box sx={{ position: 'absolute', width: '100%', height: '100%', left: 656, top: 86 }}>
         <CarouselCard />
       </Box>
 

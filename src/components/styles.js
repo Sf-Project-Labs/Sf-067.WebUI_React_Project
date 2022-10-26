@@ -48,7 +48,8 @@ export const styles = {
     },
   },
   navButtons: {
-    marginLeft: 200,
+    minWidth: 0,
+    marginTop: 30,
     backgroundColor: 'transparent',
     borderRadius: '50%',
     border: '1px solid',
@@ -56,19 +57,6 @@ export const styles = {
     color: '#979797',
     '&:hover': {
       color: '#C63638',
-    },
-  },
-  buttonWrapper: {
-    position: 'absolute',
-    height: '100px',
-    backgroundColor: 'transparent',
-    top: 'calc(50% - 70px)',
-    '&:hover': {
-      '& $button': {
-        backgroundColor: 'black',
-        filter: 'brightness(120%)',
-        opacity: '0.4',
-      },
     },
   },
 };
