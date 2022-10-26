@@ -16,6 +16,15 @@ const theme = createTheme({
     fontWeightRegular: 500,
     fontWeightMedium: 600,
     fontWeightBold: 700,
+    h2: {
+      fontSize: 16,
+      fontWeight: 700,
+      letterSpacing: 0,
+    },
+    body1: {
+      fontSize: 14,
+      fontWeight: 400,
+    },
   },
   components: {
     MuiCard: {
