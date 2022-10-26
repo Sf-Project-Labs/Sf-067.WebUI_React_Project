@@ -1,5 +1,4 @@
 import React from 'react';
-// import Carousel from 'react-material-ui-carousel';
 import { Paper, Button, Typography } from '@mui/material';
 import { styles } from '../styles';
 import { Box } from '@mui/system';
@@ -8,7 +7,7 @@ import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRound
 import { StyledCarousel } from './styled';
 
 export const CarouselCard = () => {
-  var items = [
+  const items = [
     {
       date: 'Published / 20.09.2019',
       name: 'London Games return in 2019',
