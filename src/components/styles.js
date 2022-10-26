@@ -48,15 +48,17 @@ export const styles = {
     },
   },
   navButtons: {
+    width: 27,
+    height: 27,
     minWidth: 0,
-    marginTop: 30,
+    marginTop: 36,
     backgroundColor: 'transparent',
     borderRadius: '50%',
-    border: '1px solid',
-    borderColor: '#979797',
+    border: '1px solid #979797',
     color: '#979797',
     '&:hover': {
       color: '#C63638',
+      border: '1px solid #C63638',
     },
   },
 };

@@ -1,10 +1,11 @@
 import React from 'react';
-import Carousel from 'react-material-ui-carousel';
+// import Carousel from 'react-material-ui-carousel';
 import { Paper, Button, Typography } from '@mui/material';
 import { styles } from '../styles';
 import { Box } from '@mui/system';
 import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
+import { StyledCarousel } from './styled';
 
 export const CarouselCard = () => {
   var items = [
@@ -34,7 +35,7 @@ export const CarouselCard = () => {
   const indicatorArr = ['01', '02', '03', '04'];
 
   return (
-    <Carousel
+    <StyledCarousel
       autoPlay={false}
       fullHeightHover={false}
       navButtonsAlwaysVisible={true}
@@ -42,16 +43,19 @@ export const CarouselCard = () => {
       NavButton={({ onClick, className, style, next, prev }) => {
         return (
           <Button onClick={onClick} className={className} style={styles.navButtons} disableRipple>
-            {next && <ArrowForwardIosRoundedIcon />}
-            {prev && <ArrowBackIosRoundedIcon />}
+            {next && <ArrowForwardIosRoundedIcon sx={{ fontSize: 15 }} />}
+            {prev && <ArrowBackIosRoundedIcon sx={{ fontSize: 15 }} />}
           </Button>
         );
+      }}
+      navButtonsProps={{
+        className: 'navigationButton',
       }}
       navButtonsWrapperProps={{
         style: {
           bottom: '0',
           top: 'unset',
-          marginLeft: '196px',
+          marginLeft: '210px',
         },
       }}
       indicatorIconButtonProps={{
@@ -79,7 +83,7 @@ export const CarouselCard = () => {
           justifyContent: 'flex-end',
           marginTop: '30px',
           marginBottom: '39px',
-          marginRight: '70px',
+          marginRight: '60px',
           float: 'right',
         },
       }}
@@ -88,7 +92,7 @@ export const CarouselCard = () => {
       {items.map((item, i) => (
         <Item key={i} item={item} />
       ))}
-    </Carousel>
+    </StyledCarousel>
   );
 };
 
