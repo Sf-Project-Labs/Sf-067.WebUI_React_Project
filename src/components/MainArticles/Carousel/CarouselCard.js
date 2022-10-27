@@ -1,6 +1,6 @@
 import React from 'react';
 import { Paper, Button, Typography } from '@mui/material';
-import { styles } from '../styles';
+import { styles } from '../../styles';
 import { Box } from '@mui/system';
 import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';

@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material';
 import { mainImages } from './MainImagesData.js';
 import Box from '@mui/material/Box';
-import { styles } from '../styles';
+import { styles } from '../../styles';
 
 export const MainImage = () => {
   return (
