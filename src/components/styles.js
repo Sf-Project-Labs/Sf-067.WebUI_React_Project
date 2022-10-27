@@ -54,7 +54,7 @@ export const styles = {
     marginTop: 36,
     backgroundColor: 'transparent',
     borderRadius: '50%',
-    border: '1px solid #979797',
+    // border: '1px solid #979797',
     color: '#979797',
     '&:hover': {
       color: '#C63638',

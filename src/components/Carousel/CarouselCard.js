@@ -51,6 +51,7 @@ export const CarouselCard = () => {
         className: 'navigationButton',
       }}
       navButtonsWrapperProps={{
+        className: 'navButtonWrapper',
         style: {
           bottom: '0',
           top: 'unset',
