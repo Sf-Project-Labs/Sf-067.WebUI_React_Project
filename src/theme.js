@@ -25,6 +25,7 @@ const theme = createTheme({
     h2: {
       fontSize: 16,
       fontWeight: 700,
+      letterSpacing: 0,
     },
     h3: {
       fontSize: 12,
@@ -39,6 +40,10 @@ const theme = createTheme({
       fontSize: 12,
       fontWeight: 600,
       textTransform: 'none',
+    },
+    body1: {
+      fontSize: 14,
+      fontWeight: 400,
     },
   },
   components: {
