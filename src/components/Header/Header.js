@@ -7,11 +7,6 @@ import SocialMediaShare from './SocialMediaShare.js';
 import UserMenuList from './UserMenuList.js';
 import SelectLanguage from './SelectLanguage.js';
 
-/* There are still a few thigs for me to do with the header
-1. to remove the search form bottom border effect, because disableUnderline does not work.
-2. to change the language select, and user dropdown styles (the hover effect). 
-*/
-
 function Header() {
   return (
     <Box sx={styles.headerWrapper}>
