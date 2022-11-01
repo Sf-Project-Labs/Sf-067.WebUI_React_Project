@@ -8,52 +8,41 @@ import {
   AppBar,
   Toolbar,
 } from '@mui/material';
+import LinksGroup from './LinksGroup';
 
 export function Footer() {
+  const companyLinks = [
+    { text: 'About Sports Hub', url: '#' },
+    { text: 'News / In the Press', url: '#' },
+    { text: 'Advertising / Sport Blogger Ad Network', url: '#' },
+    { text: 'Events', url: '#' },
+    { text: 'Contact Us', url: '#' },
+  ];
+
+  const contributorLinks = [
+    { text: 'Featured Writers Program', url: '#' },
+    { text: 'Featured Team Writers Program', url: '#' },
+    { text: 'Internship Program', url: '#' },
+  ];
+
   return (
     <footer>
       <Box px={{ sm: 5 }} py={{ sm: 5 }}>
         <Container maxWidth='lg'>
           <Grid container spacing={3}>
             <Grid item xs={12} sm={4}>
-              <Typography variant='h2' sx={{ paddingBottom: '29px' }}>
-                COMPANY INFO
-              </Typography>
-              <Typography variant='h3' sx={{ paddingBottom: '14px' }}>
-                About Sports Hub
-              </Typography>
-              <Typography variant='h3' sx={{ paddingBottom: '14px' }}>
-                News / In the Press
-              </Typography>
-              <Typography variant='h3' sx={{ paddingBottom: '14px' }}>
-                Advertising / Sport Blogger Ad Network
-              </Typography>
-              <Typography variant='h3' sx={{ paddingBottom: '14px' }}>
-                Events
-              </Typography>
-              <Typography variant='h3' sx={{ paddingBottom: '14px' }}>
-                Contant Us
-              </Typography>
+              <LinksGroup name='COMPANY INFO' links={companyLinks}></LinksGroup>
             </Grid>
+
             <Grid item xs={12} sm={4}>
-              <Typography variant='h2' sx={{ paddingBottom: '29px' }}>
-                CONTRIBUTORS
-              </Typography>
-              <Typography variant='h3' sx={{ paddingBottom: '14px' }}>
-                Featured Writers Program
-              </Typography>
-              <Typography variant='h3' sx={{ paddingBottom: '14px' }}>
-                Featured Team Writers Program
-              </Typography>
-              <Typography variant='h3' sx={{ paddingBottom: '14px' }}>
-                Internship Program
-              </Typography>
+              <LinksGroup name='CONTRIBUTORS' links={contributorLinks}></LinksGroup>
             </Grid>
+
             <Grid item xs={12} sm={4}>
               <Typography variant='h2' sx={{ paddingBottom: '29px' }}>
                 NEWSLETTER
               </Typography>
-              <Typography variant='h3' sx={{ paddingBottom: '14px' }}>
+              <Typography variant='h3' sx={{ paddingBottom: '14px', color: '#434C5D' }}>
                 Sign up to receive the latest sports news
               </Typography>
               <Box>
