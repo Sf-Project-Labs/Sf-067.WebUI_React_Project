@@ -16,7 +16,7 @@ export const MoreArticlesSection = () => {
             justifyContent='space-between'
           >
             {allArticles.articles.map(article => (
-              <CardFlex key={article.id} {...article} />
+              <CardFlex key={article.id} boxShadow={true} {...article} />
             ))}
           </Grid>
         ))}

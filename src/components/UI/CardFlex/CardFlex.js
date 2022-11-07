@@ -32,7 +32,7 @@ export const CardFlex = ({
         setArrowIsDisplayed({ display: 'none' });
       }}
     >
-      <CardActionArea sx={{ display: 'flex' }}>
+      <CardActionArea disableRipple sx={{ display: 'flex' }}>
         <CardMedia
           height={100}
           width={150}
