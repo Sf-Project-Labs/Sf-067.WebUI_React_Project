@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import EastIcon from '@mui/icons-material/East';
 import { useState } from 'react';
-import { styles } from '../styles';
+import { styles } from '../../styles';
 
 export const NewsCard = ({ article }) => {
   const [isDisplayed, setIsDisplayed] = useState(false);

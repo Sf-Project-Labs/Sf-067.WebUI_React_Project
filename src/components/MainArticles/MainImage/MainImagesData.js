@@ -1,4 +1,4 @@
-import mainPhoto from '../../assets/main_news_img.png';
+import mainPhoto from '../../../assets/main_news_img.png';
 
 export const mainImages = [
   {

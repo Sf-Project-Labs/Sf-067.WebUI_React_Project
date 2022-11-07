@@ -1,9 +1,9 @@
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import { articles } from './MainArticlesData.js';
-import { NewsCard } from '../NewsCard';
-import { MainImage } from '../MainImage';
-import { CarouselCard } from '../Carousel';
+import { NewsCard } from './NewsCard';
+import { MainImage } from './MainImage';
+import { CarouselCard } from './Carousel';
 import { Box } from '@mui/material';
 
 export const MainArticles = () => {
