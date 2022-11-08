@@ -18,7 +18,7 @@ export const MainArticles = () => {
 
       <MainImage />
 
-      <Grid container marginY={1.8}>
+      <Grid container marginY={1.8} spacing={2}>
         {articles.map(article => (
           <NewsCard key={article.id} article={article} />
         ))}

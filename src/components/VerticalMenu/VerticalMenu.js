@@ -4,7 +4,7 @@ import MenuButtons from './MenuButtons';
 import Box from '@mui/material/Box';
 import { Styles } from './Styles.js';
 
-const VerticalMenu = props => {
+export const VerticalMenu = props => {
   return (
     <>
       <Box sx={Styles.verticalMenu}>
@@ -15,4 +15,3 @@ const VerticalMenu = props => {
     </>
   );
 };
-export default VerticalMenu;

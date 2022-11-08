@@ -3,10 +3,9 @@ export const styles = {
     width: '100%',
     height: '84px',
     borderBottom: '1px',
-    background: '#EDEDED',
+    background: '#FFF',
     display: 'grid',
     gridTemplateColumns: '253px 33% 17% 36.5%',
-    gap: '1px',
     justifyContent: 'space-between',
   },
 
@@ -80,7 +79,7 @@ export const styles = {
   icon: {
     color: 'black',
     padding: '10px 10px 10px 10px',
-    fontSize: '26px',
+    fontSize: '46px',
     '&:hover': {
       color: 'gray',
       cursor: 'pointer',
