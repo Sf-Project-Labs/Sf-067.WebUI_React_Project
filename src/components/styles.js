@@ -25,6 +25,9 @@ export const styles = {
     minWidth: 202,
     height: 294,
     border: '12px solid transparent',
+    '&:hover': {
+      boxShadow: '0px 2px 24px rgba(0, 0, 0, 0.110932)',
+    },
   },
   carouselCard: {
     width: 421,
