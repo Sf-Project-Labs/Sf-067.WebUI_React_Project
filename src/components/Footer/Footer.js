@@ -57,7 +57,8 @@ export function Footer() {
                 <Button
                   variant='contained'
                   sx={{
-                    paddingBottom: '10px',
+                    paddingTop: '8px',
+                    paddingBottom: '8px',
                     paddingLeft: '20px',
                     paddingRight: '20px',
                     boxShadow: 0,
