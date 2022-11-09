@@ -15,7 +15,7 @@ export const Styles = {
     display: 'flex',
     justifyContent: 'center',
     flexWrap: 'wrap',
-    left: '254px',
+    left: '250px',
     top: '0px',
     boxShadow: '13px 4px 14px rgba(0, 0, 0, 0.09)',
     zIndex: 10,
@@ -79,7 +79,7 @@ export const Styles = {
     paddingLeft: '15px',
     '&:hover': {
       color: '#7F7B7B',
-      background: '#FFFFFF',
+      background: '#fafafa',
     },
   },
 

@@ -5,7 +5,7 @@ export const styles = {
     background: '#FFF',
     borderBottom: '1px solid #EDEDED',
     display: 'grid',
-    gridTemplateColumns: '253px 33% 17% 36.5%',
+    gridTemplateColumns: '253px 33% 18% 30.5%',
     justifyContent: 'space-between',
   },
 
@@ -28,6 +28,7 @@ export const styles = {
     width: '457px',
     height: '83px',
     background: 'white',
+    borderRight: '1px solid #EdEdEd',
   },
 
   searchForm: {
@@ -54,13 +55,14 @@ export const styles = {
     alignItems: 'auto',
     height: '83px',
     background: 'white',
+    borderLeft: '1px solid #EdEdEd',
   },
 
   userDropdownHover: {
     padding: '10px',
     background: '#FFFFFF',
     pl: '2',
-    zIndex: '10',
+    zIndex: '50',
     '&:hover': {
       background: '#fbe7e8',
       color: '#D72130',
