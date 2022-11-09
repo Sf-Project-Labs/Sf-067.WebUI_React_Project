@@ -75,6 +75,7 @@ export const Styles = {
     textAlign: 'left',
     marginTop: '5px',
     justifyContent: 'flex-start',
+    textTransform: 'uppercase',
     paddingLeft: '15px',
     '&:hover': {
       color: '#7F7B7B',
@@ -116,8 +117,7 @@ export const Styles = {
     textAlign: 'left',
     color: '#B2B2B2',
     fontSize: '16px',
-    marginTop: '70px',
-    marginBottom: '15px',
+    marginTop: '30px',
   },
 
   socialIcons: {
@@ -126,7 +126,9 @@ export const Styles = {
   },
 
   icons: {
-    padding: '0 25px 15px 0',
+    fontSize: '18px',
+    marginRight: '25px',
+    marginTop: '20px',
   },
 
   ul: {

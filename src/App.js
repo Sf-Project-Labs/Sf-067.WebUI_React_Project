@@ -1,6 +1,6 @@
 import ArticlesPage from './pages/ArticlesPage';
 import HomePage from './pages/HomePage';
-import { Route, Routes, Navigate } from 'react-router';
+import { Route, Routes } from 'react-router';
 
 function App() {
   return (

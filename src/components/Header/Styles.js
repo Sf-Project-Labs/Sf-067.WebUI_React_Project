@@ -2,8 +2,8 @@ export const styles = {
   headerWrapper: {
     width: '100%',
     height: '84px',
-    borderBottom: '1px',
     background: '#FFF',
+    borderBottom: '1px solid #EDEDED',
     display: 'grid',
     gridTemplateColumns: '253px 33% 17% 36.5%',
     justifyContent: 'space-between',
@@ -22,10 +22,12 @@ export const styles = {
 
   searchWrapper: {
     display: 'flex',
+    float: 'left',
+    position: 'relative',
     alignItems: 'center',
+    width: '457px',
     height: '83px',
     background: 'white',
-    left: '255px',
   },
 
   searchForm: {
@@ -58,8 +60,9 @@ export const styles = {
     padding: '10px',
     background: '#FFFFFF',
     pl: '2',
+    zIndex: '10',
     '&:hover': {
-      background: 'rgba(215, 33, 48, 0.11)',
+      background: '#fbe7e8',
       color: '#D72130',
     },
   },
@@ -70,8 +73,9 @@ export const styles = {
     borderTop: '1px solid #EDEDED',
     pl: '2',
     fontSize: '14px',
+    zIndex: '10',
     '&:hover': {
-      background: 'rgba(215, 33, 48, 0.11)',
+      background: '#fbe7e8',
       color: '#D72130',
     },
   },
