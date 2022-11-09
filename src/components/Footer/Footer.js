@@ -7,6 +7,7 @@ import {
   Typography,
   AppBar,
   Toolbar,
+  Divider,
 } from '@mui/material';
 import LinksGroup from './LinksGroup';
 
@@ -27,9 +28,10 @@ export function Footer() {
 
   return (
     <footer>
+      <Divider variant='inset' sx={{ ml: 30, color: '#D72130' }} />
       <Box px={{ sm: 5 }} py={{ sm: 5 }}>
         <Container maxWidth='lg'>
-          <Grid container spacing={3}>
+          <Grid container spacing={1} sx={{ paddingLeft: 12 }}>
             <Grid item xs={12} sm={4}>
               <LinksGroup name='COMPANY INFO' links={companyLinks}></LinksGroup>
             </Grid>
@@ -55,7 +57,7 @@ export function Footer() {
                 <Button
                   variant='contained'
                   sx={{
-                    paddingBottom: '14px',
+                    paddingBottom: '10px',
                     paddingLeft: '20px',
                     paddingRight: '20px',
                     boxShadow: 0,
