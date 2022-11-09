@@ -38,12 +38,12 @@ export const SortComments = () => {
             onClick={handleClick}
             sx={{
               '&:hover': { color: 'black', background: '#f1f1f1' },
-              top: '-15px',
+              top: '-10px',
               right: '-10px',
             }}
             disableRipple
           >
-            <ListItemText primary='sort by: most popular' sx={{ fontWeight: '700' }} />
+            <ListItemText primary='sort by: Most popular' sx={{ fontWeight: '700' }} />
             {open ? <ExpandLessIcon fontSize='small' /> : <ExpandMoreIcon fontSize='small' />}
           </ListItemButton>
           <Collapse in={open} timeout='auto' unmountOnExit>
