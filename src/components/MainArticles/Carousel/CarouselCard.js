@@ -35,6 +35,8 @@ export const CarouselCard = () => {
 
   return (
     <StyledCarousel
+      swipe={false}
+      animation={false}
       autoPlay={false}
       fullHeightHover={false}
       navButtonsAlwaysVisible={true}

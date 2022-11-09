@@ -21,19 +21,6 @@ export const Styles = {
     zIndex: 10,
   },
 
-  verticalMenu3: {
-    position: 'absolute',
-    width: '176px',
-    background: '#F8F8F8',
-    display: 'flex',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
-    left: '508px',
-    top: '86px',
-    boxShadow: '13px 4px 14px rgba(0, 0, 0, 0.09)',
-    zIndex: '10',
-  },
-
   greyAttribute: {
     width: '4px',
     height: '111px',
@@ -88,6 +75,7 @@ export const Styles = {
     textAlign: 'left',
     marginTop: '5px',
     justifyContent: 'flex-start',
+    textTransform: 'uppercase',
     paddingLeft: '15px',
     '&:hover': {
       color: '#7F7B7B',
@@ -129,8 +117,7 @@ export const Styles = {
     textAlign: 'left',
     color: '#B2B2B2',
     fontSize: '16px',
-    marginTop: '70px',
-    marginBottom: '15px',
+    marginTop: '30px',
   },
 
   socialIcons: {
@@ -139,7 +126,9 @@ export const Styles = {
   },
 
   icons: {
-    padding: '0 25px 15px 0',
+    fontSize: '18px',
+    marginRight: '25px',
+    marginTop: '20px',
   },
 
   ul: {

@@ -7,7 +7,7 @@ import SocialMediaShare from './SocialMediaShare.js';
 import UserMenuList from './UserMenuList.js';
 import SelectLanguage from './SelectLanguage.js';
 
-function Header() {
+export const Header = () => {
   return (
     <Box sx={styles.headerWrapper}>
       <Box sx={styles.logo}>
@@ -30,6 +30,4 @@ function Header() {
       </Box>
     </Box>
   );
-}
-
-export default Header;
+};

@@ -1,6 +1,6 @@
 export const styles = {
   divider: {
-    margin: '100px 0 50px',
+    margin: '30px 0 50px',
     '.MuiDivider-wrapper': {
       padding: 0,
     },
