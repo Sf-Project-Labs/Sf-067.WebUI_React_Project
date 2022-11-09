@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Box, Button } from '@mui/material';
 import { styles } from './styles';
 import { SortComments } from './SortComments';
