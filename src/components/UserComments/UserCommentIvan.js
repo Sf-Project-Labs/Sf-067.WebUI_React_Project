@@ -1,16 +1,12 @@
 import React from 'react';
-import { Fragment } from 'react';
-import { Box } from '@mui/material';
+import { Box, Button, Typography, Avatar } from '@mui/material';
 import { styles } from './styles';
-import { Avatar } from '@mui/material';
-import { Typography } from '@mui/material';
-import { Button } from '@mui/material';
 import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 import ThumbDownOffAltIcon from '@mui/icons-material/ThumbDownOffAlt';
 
 export const UserCommentIvan = () => {
   return (
-    <Fragment>
+    <>
       <Box sx={styles.avatarAndNameWrapper}>
         <Box sx={styles.commenterAvatar}>
           <Avatar
@@ -94,6 +90,6 @@ export const UserCommentIvan = () => {
           </Button>
         </Box>
       </Box>
-    </Fragment>
+    </>
   );
 };

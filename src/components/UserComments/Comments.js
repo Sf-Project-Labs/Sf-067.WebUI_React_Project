@@ -1,15 +1,14 @@
 import React, { Fragment } from 'react';
-import { Box } from '@mui/material';
+import { Box, Button } from '@mui/material';
 import { styles } from './styles';
 import { SortComments } from './SortComments';
 import { AddComment } from './AddComment';
 import { ViewComments } from './ViewComments';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Button } from '@mui/material';
 
 export const Comments = () => {
   return (
-    <Fragment>
+    <>
       <Box sx={styles.mainComponent}>
         <SortComments />
         <AddComment />
@@ -29,6 +28,6 @@ export const Comments = () => {
           <ExpandMoreIcon fontSize='small' sx={{ padding: '0', color: '#7F8899' }} />
         </Box>
       </Box>
-    </Fragment>
+    </>
   );
 };

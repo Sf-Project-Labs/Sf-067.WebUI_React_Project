@@ -7,7 +7,6 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import Collapse from '@mui/material/Collapse';
 import ListItemText from '@mui/material/ListItemText';
-import { Fragment } from 'react';
 import { styles } from './styles';
 
 export const SortComments = () => {
@@ -29,7 +28,7 @@ export const SortComments = () => {
   });
 
   return (
-    <Fragment>
+    <>
       <Box sx={styles.sortCommentsElement}>
         <Typography variant='h6' sx={{ paddingTop: '10px' }}>
           {`COMMENTS (${comments})`}
@@ -54,6 +53,6 @@ export const SortComments = () => {
           </Collapse>
         </List>
       </Box>
-    </Fragment>
+    </>
   );
 };

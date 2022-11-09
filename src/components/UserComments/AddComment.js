@@ -1,15 +1,12 @@
 import React from 'react';
-import { Avatar } from '@mui/material';
-import { Fragment } from 'react';
 import TextField from '@mui/material/TextField';
 import Input from '@mui/material/InputAdornment';
-import { Button } from '@mui/material';
-import { Box } from '@mui/material';
+import { Box, Button, Avatar } from '@mui/material';
 import { styles } from './styles';
 
 export const AddComment = () => {
   return (
-    <Fragment>
+    <>
       <Box sx={styles.addCommentElement}>
         <Box sx={styles.avatarWrapper}>
           <Avatar
@@ -41,6 +38,6 @@ export const AddComment = () => {
           </Button>
         </Box>
       </Box>
-    </Fragment>
+    </>
   );
 };
