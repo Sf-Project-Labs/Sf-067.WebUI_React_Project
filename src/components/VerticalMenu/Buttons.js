@@ -2,6 +2,7 @@ import Button from '@mui/material/Button';
 import { useState } from 'react';
 import VerticalMenu2 from './VerticalMenu2';
 import { Styles } from './Styles.js';
+import { NavLink } from 'react-router-dom';
 
 const Buttons = () => {
   const [isShown, setIsShown] = useState(false);
@@ -10,8 +11,19 @@ const Buttons = () => {
     setIsShown(current => !current);
   };
 
+  const home = (
+    <NavLink activeClassName={Styles.activeLinks} to='/' style={Styles.links}>
+      HOME
+    </NavLink>
+  );
+  const dealbook = (
+    <NavLink to='/articles' style={Styles.links}>
+      DEALBOOK
+    </NavLink>
+  );
+
   const sections = [
-    'Home',
+    home,
     'NFL',
     'NBA',
     'MLB',
@@ -23,7 +35,7 @@ const Buttons = () => {
     'SOCCER',
     'TEAM HUB',
     'lifestyle',
-    'dealbook',
+    dealbook,
     'video',
   ];
 

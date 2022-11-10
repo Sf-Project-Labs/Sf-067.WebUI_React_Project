@@ -76,7 +76,8 @@ export const Styles = {
     marginTop: '5px',
     justifyContent: 'flex-start',
     textTransform: 'uppercase',
-    paddingLeft: '15px',
+    // paddingLeft: '15px',
+    textDecoration: 'none',
     '&:hover': {
       color: '#7F7B7B',
       background: '#fafafa',
@@ -135,5 +136,21 @@ export const Styles = {
     margin: '0',
     padding: '0',
     listStyle: 'none',
+  },
+
+  links: {
+    width: '205px',
+    color: '#B2B2B2',
+    fontSize: '15px',
+    fontWeight: '700',
+    textAlign: 'left',
+    marginTop: '5px',
+    justifyContent: 'flex-start',
+    textTransform: 'uppercase',
+    textDecoration: 'none',
+    '&:hover': {
+      color: '#7F7B7B',
+      background: '#fafafa',
+    },
   },
 };
