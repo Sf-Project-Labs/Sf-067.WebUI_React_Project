@@ -5,6 +5,7 @@ import { Box } from '@mui/system';
 import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import { StyledCarousel } from './styled';
+import { Link } from 'react-router-dom';
 
 export const CarouselCard = () => {
   const items = [
@@ -114,9 +115,11 @@ function Item(props) {
           {props.item.description}
         </Typography>
       </Box>
-      <Button disableRipple sx={{ ...styles.largeButton }}>
-        More
-      </Button>
+      <Link to='/articles' style={{ textDecoration: 'none', color: 'white' }}>
+        <Button disableRipple sx={{ ...styles.largeButton }}>
+          More
+        </Button>
+      </Link>
     </Paper>
   );
 }

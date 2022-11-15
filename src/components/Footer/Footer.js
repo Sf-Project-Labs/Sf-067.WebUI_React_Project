@@ -10,6 +10,7 @@ import {
   Divider,
 } from '@mui/material';
 import LinksGroup from './LinksGroup';
+import { Link } from 'react-router-dom';
 
 export function Footer() {
   const companyLinks = [
@@ -73,18 +74,23 @@ export function Footer() {
       </Box>
 
       <AppBar position='static'>
-        <Toolbar>
-          <Typography
-            variant='h1'
-            sx={{
-              flexGrow: 1,
-              paddingLeft: '68px',
-              paddingTop: '24px',
-              paddingBottom: '28px',
-            }}
-          >
-            Sports Hub
-          </Typography>
+        <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
+          <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>
+            <Box>
+              <Typography
+                variant='h1'
+                sx={{
+                  flexGrow: 1,
+                  paddingLeft: '48px',
+                  paddingRight: '38px',
+                  paddingTop: '24px',
+                  paddingBottom: '28px',
+                }}
+              >
+                Sports Hub
+              </Typography>
+            </Box>
+          </Link>
           <Box>
             <Typography variant='h4' sx={{ paddingRight: '56px' }}>
               Copyright 2022 Sports Hub
