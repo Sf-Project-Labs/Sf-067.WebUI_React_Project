@@ -2,7 +2,7 @@ import Button from '@mui/material/Button';
 import { useState } from 'react';
 import VerticalMenu2 from './VerticalMenu2';
 import { Styles } from './Styles.js';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Buttons = () => {
   const [isShown, setIsShown] = useState(false);
@@ -12,25 +12,25 @@ const Buttons = () => {
   };
 
   const home = (
-    <NavLink activeClassName={Styles.activeLinks} to='/' style={Styles.links}>
+    <Link to='/' style={Styles.menuButtons}>
       HOME
-    </NavLink>
+    </Link>
   );
-  const nfl = (
-    <NavLink activeClassName={Styles.activeLinks} to='/articles' style={Styles.links}>
-      NFL
-    </NavLink>
+  const nba = (
+    <Link to='/articles' style={Styles.menuButtons}>
+      NBA
+    </Link>
   );
   const dealbook = (
-    <NavLink to='/dealbook' style={Styles.links}>
+    <Link to='/dealbook' style={Styles.menuButtons}>
       DEALBOOK
-    </NavLink>
+    </Link>
   );
 
   const sections = [
     home,
-    nfl,
-    'NBA',
+    nba,
+    'NFL',
     'MLB',
     'NHL',
     'CBB',

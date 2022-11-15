@@ -76,7 +76,6 @@ export const Styles = {
     marginTop: '5px',
     justifyContent: 'flex-start',
     textTransform: 'uppercase',
-    // paddingLeft: '15px',
     textDecoration: 'none',
     '&:hover': {
       color: '#7F7B7B',
@@ -151,6 +150,9 @@ export const Styles = {
     '&:hover': {
       color: '#7F7B7B',
       background: '#fafafa',
+    },
+    '&:active': {
+      color: '#D72130',
     },
   },
 };
