@@ -4,12 +4,9 @@ export function ArticleText() {
   return (
     <Box
       sx={{
-        paddingTop: '42px',
-        paddingBottom: '42px',
-        paddingLeft: '251px',
-        paddingRight: '376px',
+        marginTop: '42px',
+        marginBottom: '100px',
         width: '813px',
-        height: '248px',
       }}
     >
       <Typography sx={{ paddingBottom: '20px' }}>
