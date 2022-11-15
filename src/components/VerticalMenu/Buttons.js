@@ -16,15 +16,20 @@ const Buttons = () => {
       HOME
     </NavLink>
   );
+  const nfl = (
+    <NavLink activeClassName={Styles.activeLinks} to='/articles' style={Styles.links}>
+      NFL
+    </NavLink>
+  );
   const dealbook = (
-    <NavLink to='/articles' style={Styles.links}>
+    <NavLink to='/dealbook' style={Styles.links}>
       DEALBOOK
     </NavLink>
   );
 
   const sections = [
     home,
-    'NFL',
+    nfl,
     'NBA',
     'MLB',
     'NHL',
