@@ -15,7 +15,7 @@ export const Styles = {
     display: 'flex',
     justifyContent: 'center',
     flexWrap: 'wrap',
-    left: '254px',
+    left: '250px',
     top: '0px',
     boxShadow: '13px 4px 14px rgba(0, 0, 0, 0.09)',
     zIndex: 10,
@@ -76,10 +76,11 @@ export const Styles = {
     marginTop: '5px',
     justifyContent: 'flex-start',
     textTransform: 'uppercase',
-    paddingLeft: '15px',
+    // paddingLeft: '15px',
+    textDecoration: 'none',
     '&:hover': {
       color: '#7F7B7B',
-      background: '#FFFFFF',
+      background: '#fafafa',
     },
   },
 
@@ -135,5 +136,21 @@ export const Styles = {
     margin: '0',
     padding: '0',
     listStyle: 'none',
+  },
+
+  links: {
+    width: '205px',
+    color: '#B2B2B2',
+    fontSize: '15px',
+    fontWeight: '700',
+    textAlign: 'left',
+    marginTop: '5px',
+    justifyContent: 'flex-start',
+    textTransform: 'uppercase',
+    textDecoration: 'none',
+    '&:hover': {
+      color: '#7F7B7B',
+      background: '#fafafa',
+    },
   },
 };
