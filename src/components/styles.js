@@ -64,4 +64,16 @@ export const styles = {
       border: '1px solid #C63638',
     },
   },
+
+  scrollBar: {
+    width: '100%',
+    overflowY: 'auto',
+    '&::-webkit-scrollbar': {
+      width: '0.4em',
+    },
+    '&::-webkit-scrollbar-thumb': {
+      backgroundColor: '#C4C4C4',
+      borderRadius: '4px',
+    },
+  },
 };

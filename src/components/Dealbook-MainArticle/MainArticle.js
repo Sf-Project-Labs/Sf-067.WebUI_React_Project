@@ -3,24 +3,21 @@ import photo from '../../assets/dealbook_main_article/edgar-chaparro-kB5DnieBLtM
 
 export function MainArticle() {
   return (
-    <Box>
+    <Box sx={{ marginBottom: '50px' }}>
       <img
         src={photo}
         alt='main article'
+        sx={{ display: 'flex', position: 'relative' }}
         style={{
-          paddingLeft: '252px',
-          paddingRight: '374px',
-          paddingTop: '160px',
-          width: '814px',
-          height: '460px',
+          width: '850px',
+          height: '560px',
         }}
       />
       <Box
         sx={{
           position: 'absolute',
-          left: '891px',
-          top: '274px',
-          right: '128px',
+          top: '200px',
+          marginLeft: '667px',
           width: '421px',
           height: '272px',
           backgroundColor: '#F6F6F6',
