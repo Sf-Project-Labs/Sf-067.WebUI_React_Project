@@ -51,13 +51,11 @@ export const SurveyList = props => {
   };
 
   return (
-    <Box sx={{ maxHeight: '795px' }}>
+    <Box sx={{ maxHeight: '550px', overflowY: 'auto', ...styles.scrollBar }}>
       {passedSurveys.map((surveys, index) => (
         <Accordion expanded={expanded === surveys.id} onChange={handleChange(surveys.id)}>
           <AccordionSummary
             key={surveys.id}
-            aria-controls='panel1d-content'
-            id='panel1d-header'
             sx={{ display: 'flex', justifyContent: 'space-between', ...styles.mainArticleCard }}
           >
             <Box sx={{ width: '60%', marginRight: '10px' }}>

@@ -1,7 +1,7 @@
 export const passedSurveys = [
   {
     id: 1,
-    title: 'What percent of people actually are participating in surveys?',
+    title: 'Do you like surveys?',
     surveyConclusion: 'Conclusion:',
     subTitle:
       'According to this survey, about 95% of the people which take a part in some surveys said, that they do not want to participate in any surveys. They believe that the surveys are not good, because they do not believe in them anyway. They also said that they actually are NOT a part of this survey, but they are in this survey jut to say that they do not take a part in any surveys.',
@@ -12,7 +12,7 @@ export const passedSurveys = [
     title: 'Was there a Pigeon flying around the international space station?',
     surveyConclusion: 'Conclusion:',
     subTitle:
-      'According this survey, pigeons does not exist! People believe that the pigeons are a goverment project, to hide a real problems happening on the space station. Participating in this survey is very important, because it will show the real size of the pigeons problem.',
+      'According this survey, pigeons does not exist! People believe that the pigeons are a government project, which aims to hide a real problems happening on the earth. Participating in this survey is very important, because it will show the real size of the pigeons problem.',
     surveyDate: new Date().toDateString(),
   },
   {
@@ -25,7 +25,7 @@ export const passedSurveys = [
   },
   {
     id: 4,
-    title: 'Would you rather fight 10 duck-sized horses, or 1 horse-sized duck?.',
+    title: 'Would you rather fight 10 duck-sized horses, or 1 horse-sized duck?',
     surveyConclusion: 'Conclusion:',
     subTitle:
       'From this survey result... it looks like, people often prefer to fight with mouse-sized dogs, than a dog sized cats. But if it depends on your answer, you prefer to fight 10 duck-sized horses.',
@@ -33,27 +33,25 @@ export const passedSurveys = [
   },
   {
     id: 5,
-    title: 'Rugby World Cup 2019 Trophy Tour reunites rugby legends in South Africa',
+    title: 'Where is UP?',
     surveyConclusion: 'Conclusion:',
     subTitle:
-      'Hundreds of rugby fans and a host of Springbok legends joined the celebration of rugby in South Africa this week on the 14th stop of the Rugby World Cup 2019 Trophy Tour.',
+      'Most of people on this survey actually voted that, up can be found in 3.8972 hexadromical sub degrees, perpendicular to the trajectical, subrejectical Nip tomita Axis, relative to 3.4x and over geropotramical steadys!',
     surveyDate: new Date().toDateString(),
   },
   {
     id: 6,
-    title:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt .',
+    title: 'Are birds nesting on the moon?',
     surveyConclusion: 'Conclusion:',
     subTitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Most people on this survey said, that the birds actually can nest whatever they want! We have to respect their rights. Only those who believes that the moon does not exist because is a reflection of the flat earth voted against birds-nesting on the moon.',
     surveyDate: new Date().toDateString(),
   },
   {
     id: 7,
-    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing .',
+    title: 'Do you like pizza with pineapple?',
     surveyConclusion: 'Conclusion:',
-    subTitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    subTitle: 'Oh, gosh!',
     surveyDate: new Date().toDateString(),
   },
   {

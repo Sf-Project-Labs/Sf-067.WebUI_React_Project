@@ -46,10 +46,11 @@ export const styles = {
     height: 30,
     border: '12px solid transparent',
     '&:hover': {
-      boxShadow: '-2px 13px 22px -5px rgba(15,15,15,0.5)',
+      boxShadow: '0px 2px 24px rgba(0, 0, 0, 0.110932)',
       background: '#FFF',
       border: '1px solid #FFF',
       height: '204',
+      zIndex: '10',
     },
   },
 
