@@ -5,7 +5,7 @@ import { Grid, Box } from '@mui/material';
 
 export const Layout = ({ children }) => {
   return (
-    <Box sx={{ margin: 'auto' }} width={1440}>
+    <Box sx={{ margin: 'auto', overflowX: 'hidden' }} width={1440}>
       <Grid container spacing={0}>
         <Grid item xs={12}>
           <Header />
