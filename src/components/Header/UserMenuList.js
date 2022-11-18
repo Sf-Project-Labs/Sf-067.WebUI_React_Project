@@ -8,6 +8,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Collapse from '@mui/material/Collapse';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
+import { Link } from 'react-router-dom';
 import { styles } from './Styles';
 
 export default function UserMenuList() {
@@ -17,7 +18,14 @@ export default function UserMenuList() {
     setOpen(!open);
   };
 
-  const listItems = ['John@gmail.com', 'View Profile', 'Change Password', 'My Surveys', 'Team Hub'];
+  const mySurveys = (
+    <Link to='/surveys' sx={{ textDecoration: 'none' }}>
+      <ListItemButton sx={{ width: '100%', color: 'Black', textDecoration: 'none' }} disableRipple>
+        My Surveys
+      </ListItemButton>
+    </Link>
+  );
+  const listItems = ['John@gmail.com', 'View Profile', 'Change Password', mySurveys, 'Team Hub'];
 
   const mapedListItems = listItems.map((listitem, index) => {
     return (
