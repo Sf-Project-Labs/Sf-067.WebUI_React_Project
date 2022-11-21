@@ -5,6 +5,7 @@ import { Layout } from '../components/layout';
 
 import { MainArticles } from '../components/MainArticles';
 import { PhotoOfTheDay } from '../components/PhotoOfTheDay';
+import { AccountMenu } from '../components/UI/AccountMenu';
 function HomePage() {
   return (
     <Layout>
