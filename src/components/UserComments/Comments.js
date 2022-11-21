@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Button } from '@mui/material';
 import { styles } from './styles';
-import { SortComments } from './SortComments';
+import SortComments from './SortComments';
 import { AddComment } from './AddComment';
 import { ViewComments } from './ViewComments';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
