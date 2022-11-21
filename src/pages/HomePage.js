@@ -2,10 +2,9 @@ import { Box } from '@mui/material';
 import { BreakdownSection } from '../components/BreakdownSection';
 import { MostPopularMostCommented } from '../components/MostPopularMostCommentedSection';
 import { Layout } from '../components/layout';
-
 import { MainArticles } from '../components/MainArticles';
 import { PhotoOfTheDay } from '../components/PhotoOfTheDay';
-import { AccountMenu } from '../components/UI/AccountMenu';
+
 function HomePage() {
   return (
     <Layout>
