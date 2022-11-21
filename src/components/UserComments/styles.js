@@ -13,7 +13,7 @@ export const styles = {
   sortCommentsElement: {
     width: '95%',
     display: 'flex',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-end',
     alignItems: 'center',
     margin: '20px',
   },
