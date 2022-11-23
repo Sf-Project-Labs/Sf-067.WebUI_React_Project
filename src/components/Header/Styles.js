@@ -66,7 +66,7 @@ export const styles = {
     zIndex: '50',
     '&:hover': {
       background: '#fbe7e8',
-      color: '#D72130',
+      color: '#d72130',
     },
   },
 

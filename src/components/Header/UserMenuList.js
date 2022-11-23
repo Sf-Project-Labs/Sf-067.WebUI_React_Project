@@ -8,8 +8,9 @@ import ListItemText from '@mui/material/ListItemText';
 import Collapse from '@mui/material/Collapse';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
-import { NavLink } from 'react-router-dom';
+import avatarPicture from '../../assets/personal_form/pexels-pixabay-356043-scaled.jpg';
 import { styles } from './Styles';
+import { UserDropdownLink } from '../UI/Styles/NavStyles';
 
 export default function UserMenuList() {
   const [open, setOpen] = useState(false);
@@ -18,19 +19,11 @@ export default function UserMenuList() {
     setOpen(!open);
   };
 
-  const mySurveys = (
-    <NavLink to='/surveys' style={{ textDecoration: 'none', color: '#222' }}>
-      My Surveys
-    </NavLink>
-  );
+  const mySurveys = <UserDropdownLink to='/surveys'> My Surveys </UserDropdownLink>;
+  const userPage = <UserDropdownLink to='/user'> My Profile </UserDropdownLink>;
+  const userPassword = <UserDropdownLink to='/passchange'> Change Password </UserDropdownLink>;
 
-  const userPage = (
-    <NavLink to='/user' style={{ textDecoration: 'none', color: '#222' }}>
-      View Profile
-    </NavLink>
-  );
-
-  const listItems = ['John@gmail.com', userPage, 'Change Password', mySurveys, 'Team Hub'];
+  const listItems = ['John@gmail.com', userPage, userPassword, mySurveys, 'Team Hub'];
 
   const mapedListItems = listItems.map((listitem, index) => {
     return (
@@ -56,17 +49,13 @@ export default function UserMenuList() {
       >
         <ListItemButton
           onClick={handleClick}
-          sx={{ background: 'white', '&:hover': { background: '#FFFFFF' } }}
+          sx={{ background: 'white', '&:hover': { background: '#FFFFFF', color: '#D72130' } }}
           disableRipple
         >
           <ListItemIcon>
-            <Avatar
-              alt='John Doe'
-              src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhVcje_7FwYnY1JKP55yfAP53ZmRfPlEcoygnCeMH2bg&s'
-              sx={{ width: '56', height: '56' }}
-            />
+            <Avatar alt='Ivan Baloh' src={avatarPicture} sx={{ width: '56', height: '56' }} />
           </ListItemIcon>
-          <ListItemText primary='John Doe' />
+          <ListItemText primary='Ivan Baloh' />
           {open ? <ArrowDropUpIcon fontSize='large' /> : <ArrowDropDownIcon fontSize='large' />}
         </ListItemButton>
         <Collapse in={open} timeout='auto' unmountOnExit>
