@@ -11,7 +11,9 @@ export const AccountMenu = () => {
         <ButtonGroupLink to='/user'>
           <Button sx={{ ...styles.menuButton }}> Personal </Button>
         </ButtonGroupLink>
-        <Button sx={{ ...styles.menuButton }}>Change password</Button>
+        <ButtonGroupLink to='/passchange'>
+          <Button sx={{ ...styles.menuButton }}>Change password</Button>
+        </ButtonGroupLink>
         <ButtonGroupLink to='/surveys'>
           <Button sx={{ ...styles.menuButton }}>My surveys</Button>
         </ButtonGroupLink>

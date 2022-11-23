@@ -31,7 +31,7 @@ export const ChangePasswordForm = () => {
   const password = watch('password');
 
   return (
-    <Box sx={{ width: '100%', margin: '50px auto' }}>
+    <Box sx={{ width: '100%', margin: '50px auto', display: 'flex', justifyContent: 'center' }}>
       <form onSubmit={handleSubmit(onSubmit)}>
         <Box sx={styles.formContainer}>
           <Box sx={styles.inputFieldBox}>
