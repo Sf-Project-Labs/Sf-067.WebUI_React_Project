@@ -48,11 +48,14 @@ export function PersonalForm() {
           FIRST NAME
         </InputLabel>
         <TextField
-          required
-          sx={{ fontSize: 16, color: 'black', fontWeight: 400, width: '389px' }}
+          sx={{ width: '389px' }}
           variant='outlined'
           size='small'
+          required
           defaultValue='Ivan'
+          inputProps={{
+            style: { fontSize: 16, color: 'black', fontWeight: 400 },
+          }}
         ></TextField>
         <InputLabel
           sx={{
@@ -66,11 +69,14 @@ export function PersonalForm() {
           LAST NAME
         </InputLabel>
         <TextField
-          sx={{ fontSize: 16, color: 'black', fontWeight: 400, width: '389px' }}
+          sx={{ width: '389px' }}
           variant='outlined'
           size='small'
           required
           defaultValue='Baloh'
+          inputProps={{
+            style: { fontSize: 16, color: 'black', fontWeight: 400 },
+          }}
         ></TextField>
         <InputLabel
           sx={{
@@ -84,11 +90,14 @@ export function PersonalForm() {
           EMAIL
         </InputLabel>
         <TextField
-          sx={{ fontSize: 16, color: 'black', fontWeight: 400, width: '389px' }}
+          sx={{
+            width: '389px',
+          }}
           variant='outlined'
           size='small'
           required
           inputProps={{
+            style: { fontSize: 16, color: 'black', fontWeight: 400 },
             pattern: '[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$',
           }}
           defaultValue='vanyabalog@gmail.com'
