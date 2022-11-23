@@ -2,7 +2,7 @@ import Button from '@mui/material/Button';
 import { useState } from 'react';
 import VerticalMenu2 from './VerticalMenu2';
 import { styles } from './styles.js';
-import { Link } from 'react-router-dom';
+import { MenuButtonsLink } from '../UI/Styles/NavStyles';
 
 const Buttons = () => {
   const [isShown, setIsShown] = useState(false);
@@ -11,25 +11,9 @@ const Buttons = () => {
     setIsShown(current => !current);
   };
 
-  const home = (
-    <Link style={styles.menuButtons} to='/'>
-      HOME
-    </Link>
-  );
-  const nba = (
-    <Link style={styles.menuButtons} to='/articles'>
-      NBA
-    </Link>
-  );
-  const dealbook = (
-    <Link style={styles.menuButtons} to='/dealbook'>
-      DEALBOOK
-    </Link>
-  );
-
   const sections = [
-    home,
-    nba,
+    <MenuButtonsLink to='/'> HOME </MenuButtonsLink>,
+    <MenuButtonsLink to='/articles'> NBA </MenuButtonsLink>,
     'NFL',
     'MLB',
     'NHL',
@@ -40,7 +24,7 @@ const Buttons = () => {
     'SOCCER',
     'TEAM HUB',
     'lifestyle',
-    dealbook,
+    <MenuButtonsLink to='/dealbook'> DEALBOOK </MenuButtonsLink>,
     'video',
   ];
 
