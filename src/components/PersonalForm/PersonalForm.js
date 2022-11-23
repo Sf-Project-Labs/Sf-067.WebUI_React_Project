@@ -1,6 +1,6 @@
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
 import picture from '../../assets/personal_form/pexels-pixabay-356043-scaled.jpg';
-import { TextField, Box, Button, Typography, Grid, Avatar } from '@mui/material';
+import { TextField, Box, Button, Grid, Avatar, InputLabel } from '@mui/material';
 
 export function PersonalForm() {
   return (
@@ -30,13 +30,14 @@ export function PersonalForm() {
               color: 'white',
               backgroundColor: '#D72130',
               borderRadius: '50%',
-              padding: '10px',
+              padding: '9px',
+              fontSize: '40px',
               position: 'relative',
-              right: '45px',
+              right: '42px',
             }}
           />
         </Box>
-        <Typography
+        <InputLabel
           sx={{
             fontSize: 10,
             color: '#434C5D',
@@ -45,15 +46,15 @@ export function PersonalForm() {
           }}
         >
           FIRST NAME
-        </Typography>
+        </InputLabel>
         <TextField
+          required
           sx={{ fontSize: 16, color: 'black', fontWeight: 400, width: '389px' }}
           variant='outlined'
           size='small'
-          required
           defaultValue='Ivan'
         ></TextField>
-        <Typography
+        <InputLabel
           sx={{
             fontSize: 10,
             color: '#434C5D',
@@ -63,7 +64,7 @@ export function PersonalForm() {
           }}
         >
           LAST NAME
-        </Typography>
+        </InputLabel>
         <TextField
           sx={{ fontSize: 16, color: 'black', fontWeight: 400, width: '389px' }}
           variant='outlined'
@@ -71,7 +72,7 @@ export function PersonalForm() {
           required
           defaultValue='Baloh'
         ></TextField>
-        <Typography
+        <InputLabel
           sx={{
             fontSize: 10,
             color: '#434C5D',
@@ -81,12 +82,15 @@ export function PersonalForm() {
           }}
         >
           EMAIL
-        </Typography>
+        </InputLabel>
         <TextField
           sx={{ fontSize: 16, color: 'black', fontWeight: 400, width: '389px' }}
           variant='outlined'
           size='small'
           required
+          inputProps={{
+            pattern: '[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$',
+          }}
           defaultValue='vanyabalog@gmail.com'
         ></TextField>
         <Button
