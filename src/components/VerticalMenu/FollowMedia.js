@@ -4,19 +4,19 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import GoogleIcon from '@mui/icons-material/Google';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import Box from '@mui/material/Box';
-import { Styles } from './Styles';
+import { styles } from './styles';
 
 const FollowMedia = props => {
   return (
-    <Box sx={Styles.followMedia}>
-      <Box sx={Styles.follow}>Follow</Box>
-      <Box sx={Styles.socialIcons}>
-        <FacebookIcon sx={Styles.icons} />
-        <TwitterIcon sx={Styles.icons} />
+    <Box sx={styles.followMedia}>
+      <Box sx={styles.follow}>Follow</Box>
+      <Box sx={styles.socialIcons}>
+        <FacebookIcon sx={styles.icons} />
+        <TwitterIcon sx={styles.icons} />
       </Box>
-      <Box sx={Styles.socialIcons}>
-        <GoogleIcon sx={Styles.icons} />
-        <YouTubeIcon sx={Styles.icons} />
+      <Box sx={styles.socialIcons}>
+        <GoogleIcon sx={styles.icons} />
+        <YouTubeIcon sx={styles.icons} />
       </Box>
     </Box>
   );

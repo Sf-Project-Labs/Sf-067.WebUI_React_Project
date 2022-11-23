@@ -1,7 +1,7 @@
 import Button from '@mui/material/Button';
 import { useState } from 'react';
 import VerticalMenu2 from './VerticalMenu2';
-import { Styles } from './Styles.js';
+import { styles } from './styles.js';
 import { Link } from 'react-router-dom';
 
 const Buttons = () => {
@@ -12,17 +12,17 @@ const Buttons = () => {
   };
 
   const home = (
-    <Link to='/' style={Styles.menuButtons}>
+    <Link style={styles.menuButtons} to='/'>
       HOME
     </Link>
   );
   const nba = (
-    <Link to='/articles' style={Styles.menuButtons}>
+    <Link style={styles.menuButtons} to='/articles'>
       NBA
     </Link>
   );
   const dealbook = (
-    <Link to='/dealbook' style={Styles.menuButtons}>
+    <Link style={styles.menuButtons} to='/dealbook'>
       DEALBOOK
     </Link>
   );
@@ -46,7 +46,7 @@ const Buttons = () => {
 
   const menuButtonsMap = sections.map((element, index) => {
     return (
-      <Button key={index} onClick={menuHandler} sx={Styles.menuButtons} disableRipple>
+      <Button key={index} onClick={menuHandler} sx={styles.menuButtons} disableRipple>
         {element}
       </Button>
     );

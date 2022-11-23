@@ -1,4 +1,4 @@
-export const Styles = {
+export const styles = {
   verticalMenu: {
     position: 'relative',
     width: '253px',

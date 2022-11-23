@@ -1,13 +1,13 @@
 import React from 'react';
-import { Styles } from './Styles';
+import { styles } from './styles';
 import Buttons from './Buttons2';
 import Box from '@mui/material/Box';
 
 const VerticalMenu2 = props => {
   return (
-    <Box sx={Styles.VerticalMenu2}>
-      <Box sx={Styles.buttonWrapper}>
-        <Box sx={Styles.redElement}></Box>
+    <Box sx={styles.VerticalMenu2}>
+      <Box sx={styles.buttonWrapper}>
+        <Box sx={styles.redElement}></Box>
         <Buttons />
       </Box>
     </Box>

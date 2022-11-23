@@ -1,5 +1,5 @@
 import { Button } from '@mui/material';
-import { Styles } from './Styles';
+import { styles } from './styles';
 
 const Buttons = () => {
   const sections = [
@@ -15,7 +15,7 @@ const Buttons = () => {
 
   const subMenuButtonsMap = sections.map((element, index) => {
     return (
-      <Button key={index} sx={Styles.subMenuButtons} disableRipple>
+      <Button key={index} sx={styles.subMenuButtons} disableRipple>
         {element}
       </Button>
     );

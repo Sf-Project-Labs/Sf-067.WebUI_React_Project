@@ -33,7 +33,7 @@ export const SortList = () => {
             onClick={handleClick}
             sx={{
               '&:hover': { color: 'black', background: '#f1f1f1' },
-              top: '-10px',
+              top: '-15px',
               right: '-10px',
             }}
             disableRipple
@@ -42,7 +42,7 @@ export const SortList = () => {
             {open ? <ExpandLessIcon fontSize='small' /> : <ExpandMoreIcon fontSize='small' />}
           </ListItemButton>
           <Collapse in={open} timeout='auto' unmountOnExit>
-            <List component='div' disablePadding>
+            <List component='div' sx={{ top: '-10px' }} disablePadding>
               {mapedSortOptions}
             </List>
           </Collapse>

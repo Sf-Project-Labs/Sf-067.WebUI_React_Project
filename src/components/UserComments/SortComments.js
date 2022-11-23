@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { styles } from './styles';
-import { SortList } from './SortList';
+import { SortList } from '../UI/SortList/SortList';
 
 const SortComments = () => {
   const comments = 2;

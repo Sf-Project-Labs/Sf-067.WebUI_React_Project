@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
+import SearchBar from './SearchBar';
 
 const SurveysState = () => {
   return (
@@ -14,7 +14,7 @@ const SurveysState = () => {
         flexDirection: 'row',
       }}
     >
-      <Box sx={{ width: '50%' }}>
+      <Box sx={{ width: '50%', display: 'flex', alignItems: 'center' }}>
         <Typography
           variant='p'
           sx={{
@@ -31,8 +31,8 @@ const SurveysState = () => {
           CLOSED
         </Typography>
       </Box>
-      <Box sx={{ width: '50%' }}>
-        <SearchIcon sx={{ float: 'right' }} />
+      <Box sx={{ width: '29%', display: 'flex', justifyContent: 'flex-end' }}>
+        <SearchBar />
       </Box>
     </Box>
   );
