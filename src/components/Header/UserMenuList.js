@@ -23,7 +23,7 @@ export default function UserMenuList() {
   const userPage = <UserDropdownLink to='/user'> My Profile </UserDropdownLink>;
   const userPassword = <UserDropdownLink to='/passchange'> Change Password </UserDropdownLink>;
 
-  const listItems = ['John@gmail.com', userPage, userPassword, mySurveys, 'Team Hub'];
+  const listItems = ['vanyabalog@gmail.com', userPage, userPassword, mySurveys, 'Team Hub'];
 
   const mapedListItems = listItems.map((listitem, index) => {
     return (
