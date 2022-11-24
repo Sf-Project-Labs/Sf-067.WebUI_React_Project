@@ -5,11 +5,11 @@ import { userComments } from './mockData';
 import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 import ThumbDownOffAltIcon from '@mui/icons-material/ThumbDownOffAlt';
 
-export const UserComment = props => {
+export const UserComment = () => {
   return (
     <Box>
-      {userComments.map((comment, index) => (
-        <Box>
+      {userComments.map(comment => (
+        <Box key={comment.id}>
           <Box sx={styles.avatarAndNameWrapper}>
             <Box sx={styles.commenterAvatar}>
               <Avatar
@@ -26,6 +26,7 @@ export const UserComment = props => {
               </Box>
               <Box>
                 <Typography
+                  component={'span'}
                   sx={{
                     fontSize: '12px',
                     fontWeight: '700',

@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 import { passedSurveys } from './mockData';
 import { styles } from './styles';
 
-export const SurveyList = props => {
+export const SurveyList = () => {
   const Accordion = styled(props => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
   ))(({ theme }) => ({
@@ -52,10 +52,13 @@ export const SurveyList = props => {
 
   return (
     <Box sx={{ maxHeight: '550px', overflowY: 'auto', ...styles.scrollBar }}>
-      {passedSurveys.map((surveys, index) => (
-        <Accordion expanded={expanded === surveys.id} onChange={handleChange(surveys.id)}>
+      {passedSurveys.map(surveys => (
+        <Accordion
+          key={surveys.id}
+          expanded={expanded === surveys.id}
+          onChange={handleChange(surveys.id)}
+        >
           <AccordionSummary
-            key={surveys.id}
             sx={{ display: 'flex', justifyContent: 'space-between', ...styles.mainArticleCard }}
           >
             <Box sx={{ width: '60%', marginRight: '10px' }}>

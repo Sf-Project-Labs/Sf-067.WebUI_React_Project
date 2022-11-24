@@ -2,7 +2,7 @@ import React from 'react';
 import Buttons from './Buttons';
 import Box from '@mui/material/Box';
 
-const MenuButtons = props => {
+const MenuButtons = () => {
   return (
     <Box sx={{ marginTop: '50px', marginLeft: '30px' }}>
       <Buttons />

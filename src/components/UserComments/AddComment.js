@@ -1,6 +1,7 @@
 import React from 'react';
 import TextField from '@mui/material/TextField';
 import Input from '@mui/material/InputAdornment';
+import avatarIvan from '../../assets/user_comments/ivan.jpg';
 import { Box, Button, Avatar } from '@mui/material';
 import { styles } from './styles';
 
@@ -9,11 +10,7 @@ export const AddComment = () => {
     <>
       <Box sx={styles.addCommentElement}>
         <Box sx={styles.avatarWrapper}>
-          <Avatar
-            alt='John Doe'
-            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhVcje_7FwYnY1JKP55yfAP53ZmRfPlEcoygnCeMH2bg&s'
-            sx={{ width: '35', height: '35' }}
-          />
+          <Avatar alt='Ivan Baloh' src={avatarIvan} sx={{ width: '35', height: '35' }} />
         </Box>
 
         <Box sx={styles.textFieldWrapper}>
