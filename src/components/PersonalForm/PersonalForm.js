@@ -48,7 +48,7 @@ export function PersonalForm() {
           FIRST NAME
         </InputLabel>
         <TextField
-          sx={{ width: '389px' }}
+          sx={{ width: '389px', height: '42px' }}
           variant='outlined'
           size='small'
           required
@@ -69,7 +69,7 @@ export function PersonalForm() {
           LAST NAME
         </InputLabel>
         <TextField
-          sx={{ width: '389px' }}
+          sx={{ width: '389px', height: '42px' }}
           variant='outlined'
           size='small'
           required
@@ -92,6 +92,7 @@ export function PersonalForm() {
         <TextField
           sx={{
             width: '389px',
+            height: '42px',
           }}
           variant='outlined'
           size='small'
@@ -105,6 +106,7 @@ export function PersonalForm() {
         <Button
           variant='contained'
           sx={{
+            height: '42px',
             paddingTop: '8px',
             paddingBottom: '8px',
             paddingLeft: '20px',
